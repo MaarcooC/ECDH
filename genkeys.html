@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Diffie Hellman - Generate keys</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/genkeys.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="cont">
+                <div class="title">Alice</div>
+                <div class="content">
+                    <label>Private Key:</label>
+                    <input type="text" id="alice-private" readonly>
+                    
+                    <label>Public Key:</label>
+                    <input type="text" id="alice-public" readonly>
+                    
+                    <label>Shared Key:</label>
+                    <input type="text" id="alice-shared" readonly>
+                    
+                    <div>
+                        <button class="priv" onclick="generatePrivate('alice')"><img src="icons/padlock.png" alt="Gen Private Key"></button>
+                        <button class="pub" onclick="generatePublic('alice')"><img src="icons/open-padlock.png" alt="Gen Public Key"></button>
+                        <button class="sha"><img src="icons/door-key.png" alt="Gen Shared Key"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cont">
+                <div class="title">Bob</div>
+                <div class="content">
+                    <label>Private Key:</label>
+                    <input type="text" id="bob-private" readonly>
+                    
+                    <label>Public Key:</label>
+                    <input type="text" id="bob-public" readonly>
+                    
+                    <label>Shared Key:</label>
+                    <input type="text" id="bob-shared" readonly>
+                    <div>
+                        <button onclick="generatePrivate('bob')" class="priv"><img src="icons/padlock.png" alt="Gen Private Key"></button>
+                        <button class="pub" onclick="generatePublic('bob')"><img src="icons/open-padlock.png" alt="Gen Public Key"></button>
+                        <button class="sha"><img src="icons/door-key.png" alt="Gen Shared Key"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/elliptic/6.5.4/elliptic.min.js"></script>
+        <script src="ecdh.js"></script>
+    </body>
+</html>

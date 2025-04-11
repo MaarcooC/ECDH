@@ -1,0 +1,124 @@
+.main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.cont {
+    background: linear-gradient(135deg, rgba(0, 255, 170, 0.1), rgba(0, 170, 255, 0.1));
+    backdrop-filter: blur(10px);
+    flex: 1;
+    min-width: 600px;
+    max-width: 50%;
+    min-height: fit-content;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 255, 170, 0.5);
+    border: 1px solid rgba(0, 255, 170, 0.4);
+    margin: 30px;
+}
+
+.cont .title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #00ffaa;
+    text-shadow: 0 0 8px #00ffaa, 0 0 15px #00ffaa;
+}
+
+.content {
+    display: flex;
+    min-width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 80%;
+}
+
+input {
+    min-width: 480px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #00ffaa;
+    background: rgba(0, 255, 170, 0.1);
+    color: #00ffaa;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #00ffaa;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 50px;
+    height: 55px;
+    width: 70px;
+    margin: 10px;
+    position: relative;
+}
+
+button:hover {
+    background: #00dd88;
+}
+
+button img {
+    height: 100%;
+}
+
+.priv:hover::after {
+    content: "Generate Private Key";
+    position: absolute;
+    top: 65px;
+    width: 100px;
+    right: -20px;
+    background-color: #0a3e2b;
+    padding: 5px;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.pub:hover::after {
+    content: "Generate Public Key";
+    position: absolute;
+    top: 65px;
+    width: 100px;
+    right: -20px;
+    background-color: #0a3e2b;
+    padding: 5px;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.sha:hover::after {
+    content: "Generate Shared Key";
+    position: absolute;
+    top: 65px;
+    width: 100px;
+    right: -20px;
+    background-color: #0a3e2b;
+    padding: 5px;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+}
