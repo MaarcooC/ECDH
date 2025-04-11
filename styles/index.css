@@ -1,28 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
 .main {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center; 
-    padding-top: 50px; 
+    align-items: center;
     width: 100%;
 }
 
 .cont {
-    background-color: rgb(21, 21, 61);
+    background: linear-gradient(135deg, rgba(0, 255, 170, 0.1), rgba(0, 170, 255, 0.1));
+    backdrop-filter: blur(10px);
     width: 50%;
+    min-height: fit-content;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 25px;
-    height: 60%;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 255, 170, 0.5);
+    border: 1px solid rgba(0, 255, 170, 0.4);
 }
 
 .cont .title {
-    font-size: 30px;
-    font-weight: bolder;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #00ffaa;
+    text-shadow: 0 0 8px #00ffaa, 0 0 15px #00ffaa;
 }
 
-.cont .subtitle {
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .subtitle {
     font-size: 25px;
+    text-align: center;
+    max-width: 80%;
+    color: #d3d3d3;
+}
+
+.content button {
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 20px;
+    border-radius: 25px;
+    height: 55px;
+    width: 150px;
+    background: linear-gradient(135deg, #00ffaa, #04713b);
+    color: #0a0a0a;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(0, 255, 170, 0.8);
+    text-transform: uppercase;
+}
+
+.content button:hover {
+    background: linear-gradient(135deg, #04713b, #00ffaa);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px rgba(0, 255, 170, 1);
+}
+
+.content button:active {
+    transform: scale(0.95);
 }
