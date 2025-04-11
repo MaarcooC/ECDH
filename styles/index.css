@@ -1,0 +1,28 @@
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 50px; 
+    width: 100%;
+}
+
+.cont {
+    background-color: rgb(21, 21, 61);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    height: 60%;
+}
+
+.cont .title {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.cont .subtitle {
+    font-size: 25px;
+}
