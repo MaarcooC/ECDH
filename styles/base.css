@@ -9,7 +9,41 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
     align-items: center;
-    overflow: hidden;
     background-image: radial-gradient(circle at center, rgba(0, 255, 170, 0.2), rgba(0, 0, 0, 0.9));
+}
+
+.header {
+    width: 100%;
+    background: rgba(0, 255, 170, 0.05);
+    border-bottom: 1px solid rgba(0, 255, 170, 0.2);
+    backdrop-filter: blur(8px);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 255, 170, 0.2);
+}
+
+.header h1 {
+    color: #00ffaa;
+    font-size: 30px;
+    text-shadow: 0 0 8px #00ffaa;
+    margin: 0;
+}
+
+.home-cont img {
+    height: 50px;
+    padding-left: 30px;
+}
+
+.git-cont img {
+    height: 50px;
+    padding-right: 30px;
 }

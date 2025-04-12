@@ -7,10 +7,19 @@
         <link rel="stylesheet" href="styles/genkeys.css">
     </head>
     <body>
+        <div class="header">
+            <div class="home-cont">
+                <a href="index.html"><img src="icons/home.png" alt="home"></a>
+            </div>
+            <h1>Elliptic Curve Diffie Hellman</h1>
+            <div class="git-cont">
+                <a href="https://github.com/MaarcooC/ECDH" target="_blank"><img src="icons/github-mark-white.png" alt="github"></a>
+            </div>
+        </div>
         <div class="main">
             <div class="cont">
                 <div class="title">Alice</div>
-                <div class="content">
+                <div class="content" id="alice">
                     <label>Private Key:</label>
                     <input type="text" id="alice-private" readonly>
                     
@@ -23,14 +32,14 @@
                     <div>
                         <button class="priv" onclick="generatePrivate('alice')"><img src="icons/padlock.png" alt="Gen Private Key"></button>
                         <button class="pub" onclick="generatePublic('alice')"><img src="icons/open-padlock.png" alt="Gen Public Key"></button>
-                        <button class="sha"><img src="icons/door-key.png" alt="Gen Shared Key"></button>
+                        <button class="sha" onclick="generateShared('alice')" ><img src="icons/door-key.png" alt="Gen Shared Key"></button>
                     </div>
                 </div>
             </div>
 
             <div class="cont">
                 <div class="title">Bob</div>
-                <div class="content">
+                <div class="content" id="bob">
                     <label>Private Key:</label>
                     <input type="text" id="bob-private" readonly>
                     
@@ -42,7 +51,7 @@
                     <div>
                         <button onclick="generatePrivate('bob')" class="priv"><img src="icons/padlock.png" alt="Gen Private Key"></button>
                         <button class="pub" onclick="generatePublic('bob')"><img src="icons/open-padlock.png" alt="Gen Public Key"></button>
-                        <button class="sha"><img src="icons/door-key.png" alt="Gen Shared Key"></button>
+                        <button class="sha" onclick="generateShared('bob')"><img src="icons/door-key.png" alt="Gen Shared Key"></button>
                     </div>
                 </div>
             </div>

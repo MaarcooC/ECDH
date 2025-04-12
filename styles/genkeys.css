@@ -16,7 +16,7 @@
     min-width: 600px;
     max-width: 50%;
     min-height: fit-content;
-    height: 50%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,7 @@
 }
 
 .cont .title {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
     text-align: center;
     color: #00ffaa;
@@ -44,6 +44,7 @@
     justify-content: center;
     margin-top: 50px;
     width: 80%;
+    font-size: 25px;
 }
 
 input {
@@ -111,14 +112,21 @@ button img {
 }
 
 .sha:hover::after {
-    content: "Generate Shared Key";
     position: absolute;
     top: 65px;
-    width: 100px;
-    right: -20px;
+    width: 300px;
+    right: -100px;
     background-color: #0a3e2b;
     padding: 5px;
     color: #fff;
     font-size: 1rem;
     border-radius: 5px;
+}
+
+#alice .sha:hover::after {
+    content: "Generate Shared Key: Alice receives Bob's public key and combines it with her private key to compute the shared key.";
+}
+
+#bob .sha:hover::after {
+    content: "Generate Shared Key: Bob receives Alice's public key and combines it with his private key to compute the shared key.";
 }
